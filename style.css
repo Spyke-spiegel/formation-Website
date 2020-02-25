@@ -1,9 +1,70 @@
-.container {
-  width: 70vw;
-  height: 100%;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.bg {
-  width: 100vw;
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bg {
+  background-image: linear-gradient(
+      to top,
+      rgb(245, 246, 252, 0.2),
+      rgb(255, 206, 46, 0.5)
+    ),
+    url("./assets/BG.jpg");
+  background-position: center;
+  background-size: cover;
   height: 70vh;
+  width: 100vw;
+  top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#bg-text {
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 70px;
+}
+
+.content {
+  background-color: blanchedalmond;
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 50px 0 50px 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.content > img {
+  width: 30%;
+  height: 100%;
+  padding-right: 30px;
+}
+
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: blanchedalmond;
+  font-family: "Montserrat", sans-serif;
+}
+.contact > a {
+  text-decoration: none;
+}
+
+.footer {
+  width: 100vw;
+  height: 10vh;
+  background-color: black;
 }
